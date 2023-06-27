@@ -1,6 +1,10 @@
 public class ContaBancaria {
+    private int numeroConta;
     private double saldo;
+    private Cliente cliente;
     public ContaBancaria(int numeroConta, Cliente cliente){
+        this.numeroConta = numeroConta;
+        this.cliente = cliente;
         this.saldo = 0.0;
     }
     
@@ -33,7 +37,7 @@ public class ContaBancaria {
     }
 
     public int getNumeroConta() {
-        return 0;
+        return numeroConta;
     }
 
 
