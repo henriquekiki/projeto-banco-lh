@@ -11,7 +11,6 @@ public class ContaBancaria {
     public void depositar(double valor){
         if (valor > 0){
             saldo += valor;
-            System.out.println("Depósito realizado com sucesso.");
         } else {
             System.out.println("Valor inválido para depósito.");
         }
@@ -23,7 +22,7 @@ public class ContaBancaria {
             if(valor <= saldo){
                 saldo -= valor;
                 System.out.println("Saque realizado com sucesso.");
-            } else {
+           } else {
                 System.out.println("Saldo insuficiente.");
             }
         } else {
